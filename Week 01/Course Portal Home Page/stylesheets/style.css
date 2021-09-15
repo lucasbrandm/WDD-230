@@ -1,0 +1,57 @@
+html {
+  max-width: 750px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  background-color: rgb(116, 189, 0);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header img {
+  float: right;
+  border-radius: 5px;
+  max-width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+main {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  border-bottom: 2px solid #c2c2c2;
+}
+
+main ul {
+  margin-top: 8px;
+}
+
+footer {
+  background-color: rgb(116, 189, 0);
+  margin-top: 30px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+footer .lastUpdated {
+  font-size: 0.9em;
+  margin-top: -8px;
+}
