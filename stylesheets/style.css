@@ -5,7 +5,7 @@ html {
 }
 
 header {
-  background-color: rgb(116, 189, 0);
+  background-color: navy;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -40,7 +40,7 @@ main ul {
 }
 
 footer {
-  background-color: rgb(116, 189, 0);
+  background-color: navy;
   margin-top: 30px;
   padding: 10px 10px 10px 10px;
   border-radius: 15px;
