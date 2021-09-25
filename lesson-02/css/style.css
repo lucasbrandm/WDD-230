@@ -6,6 +6,7 @@ header {
   text-align: center;
   border-bottom-style: solid;
   border-radius: 10px;
+  padding-top: 1%;
 }
 
 h1,
@@ -63,4 +64,8 @@ footer p {
 footer .lastUpdated {
   font-size: 0.9em;
   margin-top: -8px;
+}
+
+a:visited {
+  color: orange;
 }
