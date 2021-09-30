@@ -3,14 +3,11 @@ body {
 }
 
 .wrapper {
-  position: fixed;
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  width: 80%;
+  grid-gap: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: center;
-  gap: 20px;
-  top: 10%;
-  left: 10%;
 }
 .left {
   grid-row-start: 2;
@@ -29,29 +26,26 @@ body {
   background-color: #12aaeb;
 }
 
-.content {
-  grid-row-start: 2;
-}
 .right {
   grid-row-start: 2;
   grid-row-end: 10;
   background-color: white;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 500px) {
   .wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 850px) {
   .wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 300px) {
+@media (min-width: 1200px) {
   .wrapper {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
