@@ -137,12 +137,6 @@ em {
   padding: 0 !important;
 }
 
-#left,
-#center,
-#right {
-  display: none;
-}
-
 @media only screen and (max-width: 799px) {
   #pricing-main main {
     display: block;

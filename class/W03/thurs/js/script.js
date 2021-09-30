@@ -1,14 +1,18 @@
+document.getElementById('left').style.visibility = 'hidden';
+document.getElementById('center').style.visibility = 'hidden';
+document.getElementById('right').style.visibility = 'hidden';
+
 //Showing elements after some time
 setTimeout(function(){
-    document.getElementById('left').style.display = 'block';
+    document.getElementById('left').style.visibility = 'visible';
 }, 1000);
 
 setTimeout(function(){
-    document.getElementById('center').style.display = 'block';
+    document.getElementById('center').style.visibility = 'visible';
 }, 2000);
 
 setTimeout(function(){
-    document.getElementById('right').style.display = 'block';
+    document.getElementById('right').style.visibility = 'visible';
 }, 3000);
 
 //Changing the color of the "Most Popular" div
