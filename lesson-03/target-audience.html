@@ -10,15 +10,44 @@
 </head>
 <body>
     <header>
-        <h1>Target Audience</h1>
+        <h1>Weather Today</h1>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="target-audience.html">Target Audience</a>
+            <a href="color-scheme.html">Color Scheme</a>
+            <a href="typography.html">Typography</a>
+          </div>
     </header>
     <main>
-        <form>
-            <input type="button" value="Back" onclick="history.back()">
-        </form>
+        <div id="container">
+            <div id="item">
+                <h1>Persona 1</h1>
+                <h3>Middle-aged and elderly people who are active or semi-active</h3>
+                <p>These people are tourists in the area, with higher-than-average income who are just planning
+                    to spend a few days in the region.
+                </p>
+            </div>
+            <div id="item">
+                <h1>Persona 2</h1>
+                <h3>Residents of the area</h3>
+                <p>These are the residents of the area. They are farmers, who have long lived in the region
+                    and need to know the weather before they plan their weekly activities.
+                </p>
+            </div>
+            <div id="item" class="bottom">
+                <h1>Scenarios</h1>
+                <ul>
+                    <li>How many inches of rain in the next three days?</li>
+                    <li>How much watering will my crops need?</li>
+                    <li>Should I pack a sweater for my camping trip this weekend?</li>
+                    <li>How much sunscreen will I need for my fishing trip?</li>
+                    <li>Will there be thunderstoms that I need to watch for this week?</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> | Lucas Moreira | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a></p>
+        <p>&copy; <span id="year"></span> | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a></p>
         <p class="lastUpdated">Last Updated: <span id="lastModified"></span></p>
     </footer>
     <script src='../scripts/index.js'></script>
