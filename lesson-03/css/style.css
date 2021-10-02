@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+header {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  border-bottom-style: solid;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+p {
+  padding-top: 20px;
+  font-family: 'Robot', sans-serif;
+  text-align: justify;
+}
+
+.container {
+  display: grid;
+  grid-gap: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+footer {
+  background-color: navy;
+  padding: 5px 10px 10px 10px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+footer .lastUpdated {
+  font-size: 0.9em;
+  margin-top: -8px;
+}
+
+a:visited {
+  color: orange;
+}
+
+#color_table {
+  width: 80%;
+}
+
+table {
+  margin-top: 50px;
+  margin-left: 49%;
+  margin-bottom: 50px;
+}
+
+tr {
+  height: 40px;
+}
+
+#colors {
+  height: 50px;
+}
+#color_ex1 {
+  background-color: #3d5a80;
+}
+
+#color_ex2 {
+  background-color: #98c1d9;
+}
+
+#color_ex3 {
+  background-color: #e0fbfc;
+}
+
+#color_ex4 {
+  background-color: #ee6c4d;
+}
+
+#color_ex5 {
+  background-color: #293241;
+}
