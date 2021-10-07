@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  background-color: #cfcfcf;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#ticketbox {
+  background-color: white;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+img {
+  object-fit: contain;
+}
+
+#a2 {
+  padding-right: 10px;
+}
+
+#a4 {
+  padding-left: 10px;
+}
+
+#a5 {
+  text-align: center;
+  padding-left: 25px;
+}
+
+#a6 {
+  padding-right: 25px;
+}
+
+#destination {
+  display: flex;
+  background-color: #001b36;
+  color: rgb(35, 62, 89);
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bigCity {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#details {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#date {
+  width: 33%;
+}
+#flight {
+  width: 33%;
+}
+#gate {
+  width: 33%;
+}
+#seat {
+  width: 33%;
+}
+#zone {
+  width: 33%;
+}
+#time {
+  width: 33%;
+}
+
+.head {
+  color: #001b36;
+}
+
+.info {
+  font-size: 1.5em;
+}
