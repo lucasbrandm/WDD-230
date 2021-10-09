@@ -30,3 +30,7 @@ const dayName = days[d.getDay()]
 
 formatted_date = dayName + ', ' + d.getDay() + " " + monthName + " " + d.getFullYear();
 document.getElementById("date").innerHTML = formatted_date;
+
+function toggleMenu() {
+  document.getElementById("primNav").classList.toggle("hide")
+}

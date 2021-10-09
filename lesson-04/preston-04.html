@@ -17,9 +17,10 @@
             <h1>Weather Today</h1>
             <h3>Your safe bet for weather in Southeastern Idaho</h3>
         </div>
+        <button onClick="toggleMenu()">&#9776;</button>
     </header>
     <nav>
-        <ul>
+        <ul id="primNav" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -28,15 +29,16 @@
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-    <main  onLoad="writeDate()">
+    <main>
         <h1 class="pageName">Preston Idaho</h1>
         <div id="banner">
+            <img src="images/placeholder_wide.jpg">
             <div id="summary">
                 <h4>Weather Summary</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum justo dui, in accumsan elit blandit vitae. 
                     Mauris in felis posuere, imperdiet ipsum id, porttitor odio.</p>
             </div>
-            <img src="images/placeholder_wide.jpg">
+            
         </div>
         <div id="fiveDay">
             <h5>Five Day Forecast</h5>
@@ -49,14 +51,15 @@
             </div>
             <div id="fiveDayArticle">
                 <h5>Article Title</h5>
-                <img src="images/placeholder_small.png">
-                <p>Morbi eget nisi commodo, imperdiet velit feugiat, porttitor arcu. Vestibulum eleifend ante metus. Nunc sed 
-                    finibus eros, at ultricies sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
-                    himenaeos. Donec suscipit consectetur sagittis. Nullam orci felis, dapibus eu lorem in, aliquet condimentum enim. 
-                    Proin hendrerit nisi sit amet orci luctus convallis. Duis vehicula facilisis tortor, ut euismod massa. Etiam 
-                    semper pulvinar congue. Quisque dapibus ut sem convallis vehicula. Quisque venenatis lobortis nibh, non 
-                    elementum erat hendrerit et.</p>
-                
+                <div id="articleArea">
+                    <p>Morbi eget nisi commodo, imperdiet velit feugiat, porttitor arcu. Vestibulum eleifend ante metus. Nunc sed 
+                        finibus eros, at ultricies sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+                        himenaeos. Donec suscipit consectetur sagittis. Nullam orci felis, dapibus eu lorem in, aliquet condimentum enim. 
+                        Proin hendrerit nisi sit amet orci luctus convallis. Duis vehicula facilisis tortor, ut euismod massa. Etiam 
+                        semper pulvinar congue. Quisque dapibus ut sem convallis vehicula. Quisque venenatis lobortis nibh, non 
+                        elementum erat hendrerit et.</p>
+                        <img src="images/placeholder_small.png">
+                </div>
             </div>
         </div>
     </main>
