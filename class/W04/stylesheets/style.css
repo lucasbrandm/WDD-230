@@ -23,23 +23,6 @@ img {
   object-fit: contain;
 }
 
-#a2 {
-  padding-right: 10px;
-}
-
-#a4 {
-  padding-left: 10px;
-}
-
-#a5 {
-  text-align: center;
-  padding-left: 25px;
-}
-
-#a6 {
-  padding-right: 25px;
-}
-
 #destination {
   display: flex;
   background-color: #001b36;
@@ -62,22 +45,7 @@ img {
   text-align: center;
 }
 
-#date {
-  width: 33%;
-}
-#flight {
-  width: 33%;
-}
-#gate {
-  width: 33%;
-}
-#seat {
-  width: 33%;
-}
-#zone {
-  width: 33%;
-}
-#time {
+#item {
   width: 33%;
 }
 
@@ -87,4 +55,44 @@ img {
 
 .info {
   font-size: 1.5em;
+}
+
+#barcode {
+  padding-top: 30px;
+}
+
+#footer {
+  padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 375px) {
+  #ticketbox {
+    width: 80%;
+  }
+  #item {
+    width: 100%;
+    border-bottom: #7c7c7c;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #ticketbox {
+    width: 65%;
+  }
+  #item {
+    width: 50%;
+    border-bottom-style: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #ticketbox {
+    width: 40%;
+  }
+  #item {
+    width: 33%;
+    border-bottom-style: none;
+  }
 }
