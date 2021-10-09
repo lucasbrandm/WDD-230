@@ -28,8 +28,8 @@
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Preston Idaho</h1>
+    <main  onLoad="writeDate()">
+        <h1 class="pageName">Preston Idaho</h1>
         <div id="banner">
             <div id="summary">
                 <h4>Weather Summary</h4>
@@ -38,8 +38,8 @@
             </div>
             <img src="images/placeholder_wide.jpg">
         </div>
-        <p>Five Day Forecast</p>
         <div id="fiveDay">
+            <h5>Five Day Forecast</h5>
             <div id="fiveDayIcons">
                 <img src="images/placeholder_small.png">
                 <img src="images/placeholder_small.png">
@@ -49,10 +49,14 @@
             </div>
             <div id="fiveDayArticle">
                 <h5>Article Title</h5>
-                <p>Vestibulum erat sem, hendrerit a posuere in, mollis id libero. Sed vulputate, purus sed porta dapibus, elit sem viverra lectus, 
-                    a tempus magna eros luctus dolor. Vivamus in lectus aliquet, lacinia nisi in, consectetur dolor. Donec nunc enim, facilisis non 
-                    magna quis, mollis rutrum augue. Aenean fermentum arcu vitae ligula luctus facilisis.</p>
                 <img src="images/placeholder_small.png">
+                <p>Morbi eget nisi commodo, imperdiet velit feugiat, porttitor arcu. Vestibulum eleifend ante metus. Nunc sed 
+                    finibus eros, at ultricies sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+                    himenaeos. Donec suscipit consectetur sagittis. Nullam orci felis, dapibus eu lorem in, aliquet condimentum enim. 
+                    Proin hendrerit nisi sit amet orci luctus convallis. Duis vehicula facilisis tortor, ut euismod massa. Etiam 
+                    semper pulvinar congue. Quisque dapibus ut sem convallis vehicula. Quisque venenatis lobortis nibh, non 
+                    elementum erat hendrerit et.</p>
+                
             </div>
         </div>
     </main>
@@ -73,9 +77,10 @@
                 <img src="images/yt.png">
             </div>
         </div>
-        <div id="footerbar">
-            <p>Insert Javascript for Date here</p>
-        </div>
-    </footer>   
+    </footer> 
+    <div id="footerbar">
+        <span id="date"></span>
+    </div> 
+    <script src="js/scripts.js"></script>
 </body>
 </html>
