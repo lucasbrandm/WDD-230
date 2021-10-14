@@ -1,0 +1,80 @@
+#image {
+  position: relative;
+  margin: auto;
+  max-width: 60%;
+}
+
+#main {
+  z-index: 1;
+  width: 100%;
+}
+
+#gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  background: rgb(28, 159, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(28, 159, 213, 1) 0%,
+    rgba(28, 159, 213, 0.6421919109440651) 20%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+
+#left {
+  position: absolute;
+  top: 3em;
+  left: 2em;
+}
+
+#right {
+  position: absolute;
+  top: 3em;
+  right: 2em;
+}
+
+#content {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 5%;
+}
+
+#content h1 {
+  position: absolute;
+  top: 45%;
+  font-size: 4em;
+}
+
+#content p {
+  font-size: 1.5em;
+  margin-right: 2%;
+}
+
+#p1 {
+  position: absolute;
+  top: 62%;
+}
+
+#p2 {
+  position: absolute;
+  top: 66%;
+}
+
+#profiles {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#profiles img {
+  width: 20%;
+}
+
+.front {
+  z-index: 3;
+}

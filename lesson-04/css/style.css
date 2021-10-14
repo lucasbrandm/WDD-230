@@ -120,7 +120,7 @@ main {
   height: auto;
   left: 20px;
   width: 25%;
-  padding: 5px;
+  padding: 5px 2px;
   background-color: #f5dd29;
   color: black;
 }
@@ -144,12 +144,18 @@ main {
   background-color: #e0fbfc;
 }
 
+#fiveDayArticle h5 {
+  margin: 0;
+}
+
 #articleArea {
   display: flex;
 }
 
 #fiveDayArticle img {
   position: relative;
+  width: auto;
+  height: auto;
 }
 
 footer {
@@ -215,6 +221,7 @@ footer #social img {
   #fiveDayIcons {
     display: none;
   }
+
   #banner {
     position: unset;
     display: block;
@@ -263,13 +270,21 @@ footer #social img {
   }
 
   #summary {
+    display: block;
     position: unset;
-    width: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
   }
 
-  #fiveDay img {
-    float: unset;
+  #articleArea {
+    display: block;
   }
+
+  #fiveDayArticle img {
+    position: unset;
+  }
+
   footer {
     grid-template-columns: 1fr;
     width: 100%;
