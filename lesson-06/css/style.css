@@ -121,8 +121,9 @@ main {
   align-content: center;
 }
 
-#banner picture > * {
+.heroPic {
   width: 100%;
+  height: auto;
 }
 
 #summary {
@@ -138,7 +139,6 @@ main {
 
 #summary ul {
   list-style-type: none;
-  margin-left: -10%;
 }
 
 #fiveDay {
