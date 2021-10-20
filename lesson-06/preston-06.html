@@ -34,12 +34,20 @@
     <main>
         <h1 class="pageName">Preston Idaho</h1>
         <div id="banner">
-            <img src="images/hero.jpg">
+            <picture>
+                <source media="(max-width: 700px)" srcset="images/hero_500.png">
+                <source media="(max-width: 900px)" srcset="images/hero_800.png">
+                <img src="images/hero_1100.png" alt="hero">
+            </picture>
             <div id="summary">
                 <h4>Weather Summary</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum justo dui, in accumsan elit
-                    blandit vitae.
-                    Mauris in felis posuere, imperdiet ipsum id, porttitor odio.</p>
+                <ul>
+                    <li>Currently: Rainy</li>
+                    <li>High: <span id="high">54</span> °F</li>
+                    <li>Wind Chill: <span id="chill"></span> °F</li>
+                    <li>Humidity: 69%</li>
+                    <li>Wind Speed: <span id="wind">12</span> mph</li>
+                </ul>
             </div>
 
         </div>
@@ -95,6 +103,17 @@
         <span id="date"></span>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Inter'
+                ]
+            }
+        });
+    </script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
