@@ -1,0 +1,24 @@
+#main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#pics {
+  margin: auto;
+  height: 250px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+}
+
+#pics img[data-src] {
+  filter: blur(0.2em);
+}
+
+#pics img {
+  width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
