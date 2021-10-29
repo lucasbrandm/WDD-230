@@ -222,6 +222,10 @@ footer #social img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  #pics figure:hover {
+    box-shadow: none;
+  }
+
   footer {
     grid-template-columns: 1fr;
     width: 100%;
