@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+body {
+  text-align: center;
+}
+
+main {
+  padding-bottom: 50px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  padding: 20px;
+  background-color: #dddddd;
+  box-shadow: 2px 2px 6px 6px;
+  margin: 20px;
+}
+
+.cards section {
+  background-color: #b9b9cc;
+  border-style: solid;
+  border-color: #9292b8;
+  padding-bottom: 20px;
+}
+
+.cards img {
+  width: 40%;
+  box-shadow: 2px 2px 6px 6px;
+}
+
+h1,
+h2 {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #4d4d96;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
