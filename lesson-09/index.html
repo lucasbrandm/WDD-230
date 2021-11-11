@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storm Center - Weather Today</title>
+    <title>Home - Weather Today</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel='icon' href='../favicon.ico' type="image/x-icon">
+    <script src="js/scripts.js" defer></script>
 </head>
 
-<body id="body">
+<body id="body"onload="getData()">
     <header>
         <div id="logo">
             <img src="images/weatherToday.png">
@@ -24,20 +25,19 @@
     </header>
     <nav>
         <ul id="primNav">
-            <li><a href="../lesson-09/index.html">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="../lesson-06/preston-06.html" >Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="../lesson-08/stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="../lesson-08/stormcenter.html">Storm Center</a></li>
             <li><a href="../lesson-07/gallery.html" >Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Storm Center</h1>
-        <p>Use the form below to report any weather events in your area. We might use your information to produce a special report where you could be featured as our reporter!</p>
-        <div id="thanks">
-            <h1>Thank you!</h1>
-            <p>Your information has been received and we'll get in touch with you in case we write an article with it.</p>
+        <div id="main_data" class="city">
+            <div id="Preston" onclick="redirect('../lesson-06/preston-06.html')"></div>
+            <div id="Fish Haven"></div>
+            <div id="Soda Springs"></div>
         </div>
     </main>
     <footer>
@@ -63,8 +63,6 @@
     <div id="footerbar">
         <span id="date"></span>
     </div>
-    <script src="js/scripts.js"></script>
-    <script src="js/lazyload.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -75,7 +73,6 @@
             }
         });
     </script>
-    <script src="js/windchill.js"></script>
 </body>
 
 </html>
