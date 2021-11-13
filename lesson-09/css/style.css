@@ -238,6 +238,14 @@ footer #social img {
     grid-column: 2;
   }
 
+  .fish #imgDiv {
+    grid-column: 1;
+  }
+
+  .fish #textDiv {
+    grid-column: 2;
+  }
+
   footer {
     grid-template-columns: 1fr;
     width: 100%;
