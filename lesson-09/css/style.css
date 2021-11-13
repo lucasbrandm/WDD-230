@@ -110,19 +110,25 @@ main {
   text-align: center;
 }
 
+#wireframe {
+  text-align: left;
+}
+
 .city {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .city > * {
+  color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 250px 1fr;
-  background-color: #e0fbfc;
+  background-color: #3d5a80;
   padding: 1rem;
 }
 
@@ -131,7 +137,8 @@ main {
 }
 
 .city img {
-  width: 400px;
+  width: 90%;
+  height: 90%;
 }
 
 .city #imgDiv {
