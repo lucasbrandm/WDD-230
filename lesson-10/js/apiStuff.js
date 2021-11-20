@@ -59,6 +59,10 @@ function drawData(temps) {
         if (day_count > 6) {
             day_count = i - 1;
         }
+        if((today.getDay() == 6) && (i == 0)) {
+            day_count = 6;
+        }
+        console.log(days[day_count])
         day.textContent = days[day_count];
         div.appendChild(day);
         div.appendChild(img);
@@ -72,7 +76,7 @@ function drawCurrent(current){
     document.getElementById("current").textContent = current.weather[0].main;
     document.getElementById("high").textContent = current.main.temp_max;
     document.getElementById("humid").textContent = current.main.humidity;
-    document.getElementById("wind").textContent = current.wind.speed * 10;
+    document.getElementById("wind").textContent = current.wind.speed;
 
     windChill();
 }

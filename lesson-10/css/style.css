@@ -184,11 +184,14 @@ main {
   display: flex;
 }
 
-#fiveDayArticle iframe {
-  position: relative;
+#fiveDayArticle p {
+  margin: auto;
+}
+#fiveDayArticle img {
   width: 500px;
   height: auto;
   max-height: 300px;
+  margin: 25px;
 }
 
 footer {
@@ -316,9 +319,8 @@ footer #social img {
   }
 
   #fiveDayArticle img {
-    position: unset;
-    width: 100%;
-    object-fit: none;
+    width: 80%;
+    object-fit: contain;
   }
 
   footer {
