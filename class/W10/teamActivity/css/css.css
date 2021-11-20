@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+*/
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Press+Start+2P&display=swap'); */
+
+body {
+  display: block;
+}
+
+#title {
+  text-align: center;
+}
+
+/* utempFiveDays {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+} */
+
+#temps {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Source Code Pro';
+  /* font-family: 'Press Start 2P'; */
+}
+
+#temps > * {
+  width: 10em;
+  padding: 1em;
+  border: 0.5em black solid;
+}
+
+#temps div p {
+  font-size: 2rem;
+}
+
+img .wi-fw {
+  text-align: center;
+  width: 2em;
+}
+
+.wi {
+}
