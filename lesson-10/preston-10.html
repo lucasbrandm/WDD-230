@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Weather Today</title>
+    <title>Weather for Preston - Weather Today</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel='icon' href='../favicon.ico' type="image/x-icon">
-    <script src="js/scripts.js" defer></script>
 </head>
 
-<body id="body"onload="getData()">
+<body id="body" onload="getWeatherData()">
     <header>
         <div id="logo">
             <img src="images/weatherToday.png">
@@ -25,27 +24,53 @@
     </header>
     <nav>
         <ul id="primNav">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="../lesson-10/preston-10.html" >Preston</a></li>
+            <li><a href="../lesson-09/index.html">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="../lesson-08/stormcenter.html">Storm Center</a></li>
-            <li><a href="../lesson-07/gallery.html" >Gallery</a></li>
+            <li><a href="../lesson-07/gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <div id="wireframe">
-            <h3>Wireframes for Home Page</h3>
-            <ul>
-                <li>Large View: <a href="https://wireframe.cc/g8Ro7k">https://wireframe.cc/g8Ro7k</a></li>
-                <li>Medium View: <a href="https://wireframe.cc/pU7WkJ">https://wireframe.cc/pU7WkJ</a></li>
-                <li>Small View: <a href="https://wireframe.cc/EjrO9s">https://wireframe.cc/EjrO9s</a></li>
-            </ul>
+        <h1 class="pageName">Preston Idaho</h1>
+        <div id="banner">
+            <picture class="heroPic">
+                <img src="images/hero.jpg" alt="hero" class="heroPic">
+            </picture>
+            <div id="summary">
+                <h4>Weather Summary</h4>
+                <ul>
+                    <li>Currently: <span id="current"></span></li>
+                    <li>High: <span id="high"></span> °F</li>
+                    <li>Wind Chill: <span id="chill"></span></li>
+                    <li>Humidity: <span id="humid"></span>%</li>
+                    <li>Wind Speed: <span id="wind"></span> mph</li>
+                </ul>
+            </div>
+
         </div>
-        <div id="main_data" class="city">
-            <div id="Preston" onclick="redirect('../lesson-10/preston-10.html')"></div>
-            <div id="Fish Haven" class="fish"></div>
-            <div id="Soda Springs"></div>
+        <div id="fiveDay" >
+            <h5>Five Day Forecast (highs)</h5>
+            <div id="fiveDayIcons">
+            </div>
+            <div id="fiveDayArticle">
+                <h5>Article Title</h5>
+                <div id="articleArea">
+                    <p>Morbi eget nisi commodo, imperdiet velit feugiat, porttitor arcu. Vestibulum eleifend ante metus.
+                        Nunc sed
+                        finibus eros, at ultricies sem. Class aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos
+                        himenaeos. Donec suscipit consectetur sagittis. Nullam orci felis, dapibus eu lorem in, aliquet
+                        condimentum enim.
+                        Proin hendrerit nisi sit amet orci luctus convallis. Duis vehicula facilisis tortor, ut euismod
+                        massa. Etiam
+                        semper pulvinar congue. Quisque dapibus ut sem convallis vehicula. Quisque venenatis lobortis
+                        nibh, non
+                        elementum erat hendrerit et.</p>
+                    <img src="images/article.jpg">
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -71,6 +96,8 @@
     <div id="footerbar">
         <span id="date"></span>
     </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/apiStuff.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
