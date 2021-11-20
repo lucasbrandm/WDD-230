@@ -69,10 +69,10 @@ function drawData(temps) {
 }
 
 function drawCurrent(current){
-    document.getElementById("current").textContent = current.main.temp + " °F";
+    document.getElementById("current").textContent = current.weather[0].main;
     document.getElementById("high").textContent = current.main.temp_max;
     document.getElementById("humid").textContent = current.main.humidity;
-    document.getElementById("wind").textContent = current.wind.speed;
+    document.getElementById("wind").textContent = current.wind.speed * 10;
 
     windChill();
 }
