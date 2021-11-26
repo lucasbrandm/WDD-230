@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="city" content="Fish Haven">
+    <title>Weather for Fish Haven - Weather Today</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylePreston.css">
+    <link rel='icon' href='../favicon.ico' type="image/x-icon">
+</head>
+
+<body id="body" onload="getWeatherData('5585010')">
+    <header>
+        <div id="logo">
+            <img src="images/weatherToday.png">
+        </div>
+        <div id="name">
+            <h1>Weather Today</h1>
+            <h3>Your safe bet for weather in Southeastern Idaho</h3>
+        </div>
+        <button onClick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="primNav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="./sodaSprings.html">Soda Springs</a></li>
+            <li><a href="#" class="active">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="pageName" id="pageName">Fish Haven, Idaho</h1>
+        <div id="banner">
+            <picture class="heroPic">
+                <img src="images/fishHaven-hero.jpg" alt="hero" class="heroPic">
+            </picture>
+            <div id="summary">
+                <h4>Weather Summary</h4>
+                <ul>
+                    <li>Currently: <span id="current"></span></li>
+                    <li>High: <span id="high"></span> °F</li>
+                    <li>Wind Chill: <span id="chill"></span></li>
+                    <li>Humidity: <span id="humid"></span>%</li>
+                    <li>Wind Speed: <span id="wind"></span> mph</li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="fiveDay" >
+            <h5>Five Day Forecast (highs)</h5>
+            <div id="fiveDayIcons">
+            </div>
+            <div id="fiveDayArticle">
+                <div id="articleArea">
+                    <h5>Did you know?</h5>
+                    <p>The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, 
+                        and remained in operation until 1962. The community was so named because nearby Bear Lake is a favorite fishing spot.
+
+                        Fish Haven's population was estimated at 100 in 1909, and was 130 in 1960.</p>
+                    <img src="images/fishHaven-article.jpeg">
+                </div>
+                <div id="events">
+                    <h5>Upcoming Events</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5926.478648866991!2d-111.40049067192214!3d42.03804813516162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1637958826433!5m2!1sen!2sus"
+                width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="info">
+            <h5>Contact Information</h5>
+            <ul>
+                <li id="pin">Rexburg, Idaho</li>
+                <li id="phone">(208) 496-1411</li>
+                <li id="mail">contact@weathertoday.com</li>
+            </ul>
+            <div id="social">
+                <img src="images/fb.jpg">
+                <img src="images/twitter.png">
+                <img src="images/yt.png">
+            </div>
+        </div>
+    </footer>
+    <div id="footerbar">
+        <span id="date"></span>
+    </div>
+    <script src="js/scriptsPreston.js"></script>
+    <script src="js/apiStuff.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Inter'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

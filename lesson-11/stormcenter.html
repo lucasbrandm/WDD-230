@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center - Weather Today</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleStorm.css">
+    <link rel='icon' href='../favicon.ico' type="image/x-icon">
+</head>
+
+<body id="body">
+    <header>
+        <div id="logo">
+            <img src="images/weatherToday.png">
+        </div>
+        <div id="name">
+            <h1>Weather Today</h1>
+            <h3>Your safe bet for weather in Southeastern Idaho</h3>
+        </div>
+        <button onClick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="primNav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html" >Preston</a></li>
+            <li><a href="./sodaSprings.html">Soda Springs</a></li>
+            <li><a href="./fishHaven.html">Fish Haven</a></li>
+            <li><a href="#" class="active">Storm Center</a></li>
+            <li><a href="./gallery.html" >Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Storm Center</h1>
+        <p>Use the form below to report any weather events in your area. We might use your information to produce a special report where you could be featured as our reporter!</p>
+        <div id="form">
+            <form action="thanks.html">
+                <fieldset id="infoYou">
+                    <legend>About You</legend>
+                    <label for="fullName">Your Name:</label>
+                    <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]{5,}">
+                    <label for="email">Your Email address: </label>
+                    <input type="email" id="email" name="email" placeholder="email@provider.com">
+                    <label for="telephone">Telephone Number:</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                    <label for="zipCode">Your ZIP Code:</label>
+                    <input id="zipCode" name="zipCode" type="number" required>
+                </fieldset>
+                
+                <br>
+
+                <fieldset id="infoStorm">
+                    <legend>About the Storm</legend>
+
+                    <label for="stormDate">Storm Date: </label>
+                    <input id="stormDate" name="stormDate" type="date">
+                    <label for="stormType">Choose the Storm Type: </label>
+                    <input id="stormType" name="stormType" list="stormTypeList">
+                    <datalist id="stormTypeList">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    <label for="stormSeverity" class="flexly">Storm Severity
+                        <input id="stormSeverity" name="stormSeverity" type="range" value="5" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <label for="stormRegion">Storm Region</label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="Select Region..." disabled selected>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </fieldset>
+                
+                <br>
+
+                <fieldset id="addInfo">
+                    <legend>Additional Information</legend>
+                    <div id="danger">
+                        <p>Are you in Danger?</p>
+                        <input type="radio" id="yes" name="dangerLevel" value="Yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="radio" id="maybe" name="dangerLevel" value="Maybe">
+                        <label for="maybe">Maybe</label><br>
+                        <input type="radio" id="no" name="dangerLevel" value="No">
+                        <label for="no">No</label>
+                    </div>
+                    <div id="textArea">
+                        <br>
+                        <label for="addInfo">Additional Information:</label><br><br>
+
+                        <textarea id="addInfo" name="addInfo" rows="5" placeholder="Feel free to use this field to let us know anything else"></textarea>
+                    </div>
+                </fieldset>
+
+
+                <input type="submit" value="Send tip">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344029!2d-111.91534444113633!3d42.099741626387434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634417142862!5m2!1sen!2sus"
+                width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="info">
+            <h5>Contact Information</h5>
+            <ul>
+                <li id="pin">Rexburg, Idaho</li>
+                <li id="phone">(208) 496-1411</li>
+                <li id="mail">contact@weathertoday.com</li>
+            </ul>
+            <div id="social">
+                <img src="images/fb.jpg">
+                <img src="images/twitter.png">
+                <img src="images/yt.png">
+            </div>
+        </div>
+    </footer>
+    <div id="footerbar">
+        <span id="date"></span>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Inter'
+                ]
+            }
+        });
+    </script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

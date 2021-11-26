@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="city" content="Preston">
+    <title>Weather for Preston - Weather Today</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylePreston.css">
+    <link rel='icon' href='../favicon.ico' type="image/x-icon">
+</head>
+
+<body id="body" onload="getWeatherData('5604473')">
+    <header>
+        <div id="logo">
+            <img src="images/weatherToday.png">
+        </div>
+        <div id="name">
+            <h1>Weather Today</h1>
+            <h3>Your safe bet for weather in Southeastern Idaho</h3>
+        </div>
+        <button onClick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="primNav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="./sodaSprings.html">Soda Springs</a></li>
+            <li><a href="./fishHaven.html">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="pageName" id="pageName">Preston, Idaho</h1>
+        <div id="banner">
+            <picture class="heroPic">
+                <img src="images/hero.jpg" alt="hero" class="heroPic">
+            </picture>
+            <div id="summary">
+                <h4>Weather Summary</h4>
+                <ul>
+                    <li>Currently: <span id="current"></span></li>
+                    <li>High: <span id="high"></span> °F</li>
+                    <li>Wind Chill: <span id="chill"></span></li>
+                    <li>Humidity: <span id="humid"></span>%</li>
+                    <li>Wind Speed: <span id="wind"></span> mph</li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="fiveDay" >
+            <h5>Five Day Forecast (highs)</h5>
+            <div id="fiveDayIcons">
+            </div>
+            <div id="fiveDayArticle">
+                <div id="articleArea">
+                    <h5>Did you know?</h5>
+                    <p>Much of the 2004 film Napoleon Dynamite was shot in the city of Preston, 
+                        including at Preston High School, located several blocks from U.S. Highway 91. 
+                        Several area landmarks can be seen throughout the film. Preston is the home of 
+                        the film's creators, Jared and Jerusha Hess; Jared attended high school in Preston.</p>
+                    <img src="images/napoleon.jpg">
+                </div>
+                <div id="events">
+                    <h5>Upcoming Events</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344029!2d-111.91534444113633!3d42.099741626387434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634417142862!5m2!1sen!2sus"
+                width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="info">
+            <h5>Contact Information</h5>
+            <ul>
+                <li id="pin">Rexburg, Idaho</li>
+                <li id="phone">(208) 496-1411</li>
+                <li id="mail">contact@weathertoday.com</li>
+            </ul>
+            <div id="social">
+                <img src="images/fb.jpg">
+                <img src="images/twitter.png">
+                <img src="images/yt.png">
+            </div>
+        </div>
+    </footer>
+    <div id="footerbar">
+        <span id="date"></span>
+    </div>
+
+    <script src="js/scriptsPreston.js"></script>
+    <script src="js/apiStuff.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Inter'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
