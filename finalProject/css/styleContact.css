@@ -1,0 +1,46 @@
+#contact {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px;
+  padding: 50px;
+  padding-bottom: 75px;
+}
+
+#form {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  text-align: left;
+  display: block;
+}
+
+#form fieldset {
+  width: 95%;
+  margin: auto;
+}
+
+#form input,
+#addInfo {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#info {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#info ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+#map {
+  grid-column: 2;
+  grid-row: 2;
+}
