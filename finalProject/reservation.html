@@ -7,6 +7,7 @@
     <title>Temple Inn & Suites</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleReservation.css">
 </head>
 <body>
     <header>
@@ -16,6 +17,7 @@
                 <h1>Temple Inn & Suites</h1>
                 <h3>A place to rest close to your place of prayer</h3>
             </div>
+            <button onClick="toggleMenu()">&#9776;</button>
         </div>
 
         <nav>
@@ -29,10 +31,87 @@
         </nav>
     </header>
     <main>
+        <div id="reservation">
+            <h1>Reserve your stay with us</h1>
+            <p>Use the form below to check for availability and reserve a stay with us. We'll contact you to confirm availability and reservation.</p>
 
+            <div id="form" class="myForm">
+                <div class="row">
+                    <fieldset>
+                        <legend>About the room</legend>
+                    <div class="column" id="aboutRoom">
+                      <div class="input-group">
+                        <label for="location">Location:</label>
+                        <select name="location" id="location">
+                            <option value="default" selected disabled>Choose one...</option>
+                            <option value="idahoFalls">Idaho Falls, ID</option>
+                            <option value="kansasCity">Kansas City, MO</option>
+                            <option value="oklahomaCity">Oklahoma City, OK</option>
+                            <option value="rexburg">Rexburg, ID</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label for="dates">Check-In Date:</label>
+                        <input type="date" id="dates" name="dates">
+                      </div>
+                      <div class="input-group">
+                        <label for="nights">Number of nights?</label>
+                        <input type="number" id="nights" value="2" max="7">
+                      </div>
+                      <div class="input-group">
+                        <label for="numRooms">How many rooms?</label>
+                        <input type="number" id="numRooms" value="1" max="3">
+                      </div>
+                      <div class="input-group">
+                        <label for="typeRooms">What type of rooms would you like?</label>
+                        <select name="typeRooms" id="typeRooms">
+                            <option value="default" selected disabled>Choose one...</option>
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="deluxe">Deluxe</option>
+                        </select>
+                      </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>About you</legend>
+                    <div class="column" id="aboutYou">
+                        <div class="input-group">
+                            <label for="fullName">Your Name:</label>
+                            <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]{5,}">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Your Email address: </label>
+                            <input type="email" id="email" name="email" placeholder="email@provider.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="telephone">Telephone Number:</label>
+                            <input type="tel" id="telephone" name="telephone" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="country">Home State or Country:</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="addInfo">Additional Information:</label>
+                    <textarea id="addInfo" name="addInfo" cols="50" rows="5" placeholder="Feel free to use this field to let us know anything else"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+    
+                    <button id="submit">Submit Booking</button>
+                    
+                  </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>© 2021 - Temple Inn & Suites</p>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

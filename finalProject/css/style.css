@@ -36,6 +36,21 @@
   margin-left: 20px;
 }
 
+header button {
+  position: fixed;
+  margin-right: 5%;
+  right: 0;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 2em;
+  display: none;
+  color: white;
+}
+
 nav {
   background-color: #606c38;
   font-family: 'open sans';
@@ -92,8 +107,35 @@ footer {
   width: 100%;
 }
 
+h1 {
+  font-family: 'montserrat';
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'merriweather sans';
+  font-size: 20px;
+}
+
 body {
   background-color: #fefae0;
   font-family: 'open sans';
   font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  #logo {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  header button {
+    display: unset;
+  }
+
+  #name h1 {
+    font-size: 30px;
+  }
+  #name h3 {
+    font-size: 15px;
+  }
 }
