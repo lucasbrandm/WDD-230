@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Inn & Suites</title>
+    <title>Temples - Temple Inn & Suites</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTemples.css">
 </head>
-<body>
+<body onload="loadTemples()">
     <header>
         <div id="logo">
             <img src="images/logo.png" alt="Temple Inn & Suites Logo">
@@ -30,7 +31,17 @@
         </nav>
     </header>
     <main>
-
+        <div id="content"></div>
+        <div id="weather">
+            <h1>Local Temperatures</h1>
+            <table id="weatherTable">
+                <tr>
+                    <th>Temple</th>
+                    <th>Weather</th>
+                    <th>Temperature</th>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
         <p>© 2021 - Temple Inn & Suites | (240) 184-1563 | contact@templeinnsuites.com</p>
