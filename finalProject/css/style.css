@@ -112,6 +112,11 @@ h1 {
   font-size: 40px;
 }
 
+h2 {
+  font-family: 'merriweather sans';
+  font-size: 25px;
+}
+
 h3 {
   font-family: 'merriweather sans';
   font-size: 20px;
