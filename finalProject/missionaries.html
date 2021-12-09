@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Inn & Suites</title>
+    <title>Missionaries - Temple Inn & Suites</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleServices.css">
 </head>
 <body>
     <header>
@@ -30,10 +31,43 @@
         </nav>
     </header>
     <main>
-
+        <div id="head">
+            <h1>Temple Full-Time Missionaries</h1>
+        </div>
+        <div id="content">
+            <div id="services">
+                <h3>Accommodations</h3>
+                <ul>
+                    <li>Different room styles for every need</li>
+                    <li>Kitchenette available in each room</li>
+                    <li>Exclusive Shuttle Hours</li>
+                    <li>Free Laundry Service</li>
+                </ul>  
+                <div id="form">
+                    <fieldset id="infoYou">
+                        <legend>Send us a message</legend>
+                        <label for="fullName">Your Name:</label>
+                        <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]{5,}">
+                        <label for="email">Your Email address: </label>
+                        <input type="email" id="email" name="email" placeholder="email@provider.com">
+                        <label for="telephone">Telephone Number:</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                        <label for="addInfo">Message:</label>
+                        <textarea id="addInfo" name="addInfo" rows="5" placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send Message">
+                </div>
+            </div>
+            <div id="images">
+                <img src="images/missionKing.jpg" alt="King Bed">
+                <img src="images/missionKitchen.jpg" alt="Kitchenette">
+                <img src="images/missionDouble.jpg" alt="Double Twin Bed">
+            </div>
+        </div>
+        <a href="./services.html">Back</a>
     </main>
     <footer>
-        <p>© 2021 - Temple Inn & Suites</p>
+        <p>© 2021 - Temple Inn & Suites | (240) 184-1563 | contact@templeinnsuites.com</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
